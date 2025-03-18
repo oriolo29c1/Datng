@@ -16,11 +16,7 @@ namespace BTL
     {
         private FormHocSinh hocSinh = null;
         private FormMonHoc monHoc = null;
-<<<<<<< HEAD
         private FormGiaoVien giaoVien = null;
-=======
-        private Form4 giaoVien = null;
->>>>>>> c612b34a7ca0059b49eca4326002829f3d3d7e2e
         private FormDiem diem = null;
         private FormLop lop = null;
         private DIEM_KHOANG_MON DKM = null; // caanf cos using BTL.LOC; vif thuoc thuw mucj khacs
@@ -91,11 +87,7 @@ namespace BTL
         {
             if (giaoVien == null || giaoVien.IsDisposed)
             {
-<<<<<<< HEAD
                 giaoVien = new FormGiaoVien();
-=======
-                giaoVien = new Form4();
->>>>>>> c612b34a7ca0059b49eca4326002829f3d3d7e2e
                 giaoVien.MdiParent = this;
                 giaoVien.FormClosed += (s, args) => giaoVien = null;
                 // Trước khi show phải ẩn form khác
