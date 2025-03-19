@@ -179,5 +179,13 @@ namespace BTL
             cbb.DisplayMember = displayMember;
             cbb.ValueMember = valueMember;
         }
+        public void FillDataGridView(DataGridView dgv, DataTable dt)
+        {
+            if (dgv == null || dt == null) return;
+
+            dgv.DataSource = null;
+            dgv.DataSource = dt;
+        }
+
     }
 }
